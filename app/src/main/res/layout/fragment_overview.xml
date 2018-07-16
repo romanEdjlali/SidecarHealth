@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sidecarhealth.sidecarhealth.view.OverviewFragment">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.sidecarhealth.sidecarhealth.viewmodel.SidecarViewModel" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp">
+
+        <LinearLayout
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5400 W Rosecrans Ave"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hawthorne, CA 90250"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:layout_below="@+id/tv_address">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="310-213-5555"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_specialities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:layout_below="@+id/tv_phone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specialities"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_practice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family Practice"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_practice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgent Care"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_prices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:layout_below="@+id/tv_specialities">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_priceRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hight"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/price_redflag"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_dir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_handset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_menu_call" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

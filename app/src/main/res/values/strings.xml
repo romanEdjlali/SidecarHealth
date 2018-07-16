@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SidecarHealth</string>
+    <string name="titleBar">Doctor</string>
+    <string name="doctor_name">Doctor\'s Name</string>
+    <string name="doctor_speciality">Speciality Practice</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_overview">Overview</string>
+    <string name="tab_costs">Costs</string>
+    <string name="google_map">Google Map</string>
+    <string name="call">Call</string>
+    <string name="cardview_title">Title</string>
+    <string name="cardview_description">Description</string>
+    <string name="doctor_icon">Doctor icon</string>
+    <string name="address">ADDRESS</string>
+    <string name="phone">PHONE</string>
+    <string name="specialities">SPECIALITIES</string>
+    <string name="prices">PRICES</string>
+</resources>

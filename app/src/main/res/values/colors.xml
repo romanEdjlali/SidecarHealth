@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBgTabs">#ffffffff</color>
+    <color name="colorTabIndicator">#20B2AA</color>
+    <color name="colorSelectedTab">#ff000000</color>
+    <color name="colorFontTab">#20B2AA</color>
+
+    <color name="colorTabs">#4169E1</color>
+    <color name="colorBtn">#20B2AA</color>
+    <color name="navy">#000080</color>
+
+    <!-- Price Range Color -->
+    <color name="colorPriceHigh">#ffff0000</color>
+    <color name="colorPriceMedium">#ffffcc66</color>
+    <color name="colorPriceLow">#ffaaff66</color>
+</resources>
